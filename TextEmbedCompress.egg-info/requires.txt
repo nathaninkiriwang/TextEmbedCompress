@@ -3,6 +3,6 @@ numpy>=1.20.0
 sentence-transformers>=2.2.0
 scikit-learn>=1.0.0
 umap-learn>=0.5.0
-param-pacmap>=0.5.0
+pacmap>=0.5.0
 datasets>=2.0.0
 tqdm>=4.60.0

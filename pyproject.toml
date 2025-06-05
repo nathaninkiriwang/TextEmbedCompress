@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 # Core metadata for your package
 name = "TextEmbedCompress" # Updated package name
-version = "0.2.0"
+version = "0.3.0"
 authors = [
     { name = "Nathan Inkiriwang / University of Sydney", email = "jonathan.inkiriwang@gmail.com" },
 ]

@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: TextEmbedCompress
-Version: 0.1.0
+Version: 0.2.0
 Summary: A Python package to compress text embeddings using various dimensionality reduction and quantization techniques, and evaluate their quality with a comprehensive intrinsic framework including the EOSk metric.
 Author-email: Nathan Inkiriwang / University of Sydney <jonathan.inkiriwang@gmail.com>
 License: MIT License
@@ -52,7 +52,7 @@ Requires-Dist: numpy>=1.20.0
 Requires-Dist: sentence-transformers>=2.2.0
 Requires-Dist: scikit-learn>=1.0.0
 Requires-Dist: umap-learn>=0.5.0
-Requires-Dist: param-pacmap>=0.5.0
+Requires-Dist: pacmap>=0.5.0
 Requires-Dist: datasets>=2.0.0
 Requires-Dist: tqdm>=4.60.0
 Dynamic: license-file

@@ -21,23 +21,24 @@ This framework allows researchers and practitioners to make informed decisions a
         * Symmetric int8 per-tensor quantization.
 * **Comprehensive Intrinsic Evaluation Framework:**
     * **Local Neighborhood Fidelity:**
-        * [cite_start]Trustworthiness ($T_k$) 
-        * [cite_start]Continuity ($C_k$) 
-        * [cite_start]Mean Relative Rank Error ($MRRE_k$) 
-        * [cite_start]Neighborhood Precision at k ($NP_k$) 
-        * [cite_start]Local Average Procrustes Measure (LPro) 
+        * Trustworthiness ($T_k$) 
+        * Continuity ($C_k$) 
+        * Mean Relative Rank Error ($MRRE_k$) 
+        * Neighborhood Precision at k ($NP_k$) 
+        * Local Average Procrustes Measure (LPro) 
     * **Global Geometry Fidelity:**
-        * [cite_start]Kruskal's Stress (KS) 
-        * [cite_start]Spearman Distance Correlation (SDC) 
-        * [cite_start]Pearson Distance Correlation (PDC) 
-        * [cite_start]Global Procrustes Measure (GPro) 
+        * Kruskal's Stress (KS) 
+        * Spearman Distance Correlation (SDC) 
+        * Pearson Distance Correlation (PDC) 
+        * Global Procrustes Measure (GPro) 
     * **Spectral Retention / Information Fidelity:**
-        * [cite_start]Explained Variance Ratio (EVR) 
-        * [cite_start]Pairwise Inner-Product (PIP) Loss 
-        * [cite_start]Eigenspace Overlap Score (EOS) 
-        * [cite_start]**Novel $EOS_k$ (Residual Eigenspace Overlap Score):** Our proposed metric to evaluate semantic preservation after removing top-k principal components, offering a more nuanced view of information retention.
+        * Explained Variance Ratio (EVR) 
+        * Pairwise Inner-Product (PIP) Loss 
+        * Eigenspace Overlap Score (EOS) 
+        * **Novel $EOS_k$ (Residual Eigenspace Overlap Score):** Our proposed metric to evaluate semantic preservation after removing top-k principal components, offering a more nuanced view of information retention.
 * **Easy-to-Use Pipeline:** A streamlined `EmbeddingPipeline` class to manage the workflow from embedding generation to compression and evaluation.
 * **Reproducibility:** Control over random states for stochastic DR methods.
+
 
 ## Installation
 
