@@ -7,7 +7,7 @@ project_root_directory = os.path.dirname(current_script_directory)
 if project_root_directory not in sys.path:
     sys.path.insert(0, project_root_directory)
 
-from embedding_compressor_evaluator import EmbeddingPipeline
+from textembedcompress import EmbeddingPipeline
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Compress and evaluate text embeddings.")
