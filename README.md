@@ -141,19 +141,6 @@ The rationale is that these top components often capture broad, sometimes task-a
 3.  Comparing the alignment of the top $N_{sub}$ principal directions (derived from left singular vectors) of these "cleaned" residual subspaces.
 4.  A high $EOS_k$ score indicates that complex, task-relevant structure beyond the dominant components is well-preserved.
 
-
-## Contributing
-
-Contributions are welcome! Whether it's bug reports, feature suggestions, or pull requests, please feel free to engage.
-
-1.  **Reporting Issues:** Please use the [GitHub issue tracker](https://github.com/yourusername/TextEmbedCompress/issues).
-2.  **Feature Requests:** Submit an issue detailing the feature and its use case.
-3.  **Pull Requests:**
-    * Fork the repository.
-    * Create a new branch for your feature or bug fix.
-    * Ensure your code adheres to quality standards (e.g., run linters, add tests).
-    * Submit a pull request with a clear description of your changes.
-
 ## License
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
