@@ -1,0 +1,134 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# Core metadata for your package
+name = "TextEmbedCompress" # Updated package name
+version = "0.1.0"
+authors = [
+    { name = "Nathan Inkiriwang / University of Sydney", email = "jonathan.inkiriwang@gmail.com" },
+]
+description = "A Python package to compress text embeddings using various dimensionality reduction and quantization techniques, and evaluate their quality with a comprehensive intrinsic framework including the EOSk metric."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License", # Match your chosen license
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: General",
+    "Topic :: Utilities",
+]
+keywords = [
+    "nlp", "text embeddings", "embeddings", "compression", "evaluation",
+    "dimensionality reduction", "quantization", "eosk", "intrinsic evaluation",
+    "sentence transformers", "machine learning", "textembedcompress" # Added new name as keyword
+]
+
+dependencies = [
+    "torch>=1.9.0",
+    "numpy>=1.20.0",
+    "sentence-transformers>=2.2.0",
+    "scikit-learn>=1.0.0",
+    "umap-learn>=0.5.0",
+    "param-pacmap>=0.5.0",
+    "datasets>=2.0.0",
+    "tqdm>=4.60.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/TextEmbedCompress" # Updated URL placeholder
+Repository = "https://github.com/yourusername/TextEmbedCompress" # Updated URL placeholder
+"Bug Tracker" = "https://github.com/yourusername/TextEmbedCompress/issues" # Updated URL placeholder
+# Documentation = "https://your-package-docs-url.com"
+
+# [project.optional-dependencies]
+# gpu = [
+#    "cuml-cu11>=23.10.00",
+# ]
+# dev = [
+#    "pytest>=7.0",
+#    "pytest-cov>=4.0",
+#    "ruff>=0.1.0",
+#    "build",
+#    "twine"
+# ]
+
+# [project.scripts]
+# tec-tool = "textembedcompress.cli:main" # Example if you add a CLI, using new package name
+
+# --- Tool-specific configurations ---
+
+[tool.setuptools]
+# Assuming your Python package directory is named 'textembedcompress'
+# (i.e., TextEmbedCompress_Project_Root/textembedcompress/__init__.py)
+packages = ["textembedcompress"]
+
+# [tool.setuptools.packages.find]
+# If your package directory is 'textembedcompress' located directly under the project root:
+# where = ["."] # (default)
+# include = ["textembedcompress*"] # (default would be based on project.name, so might need adjustment)
+# For clarity, explicitly listing `packages` in [tool.setuptools] as above is often simpler.
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+# Update coverage target to the new module name
+addopts = "-ra -q --cov=textembedcompress --cov-report=term-missing"
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.run]
+# Update source to the new module name
+source = ["textembedcompress"]
+omit = [
+    "*/__main__.py",
+    "*/tests/*",
+    "*/conftest.py",
+    "*/example*/*"
+]
+
+[tool.coverage.report]
+fail_under = 70
+show_missing = true
+
+[tool.ruff]
+select = [
+    "E", "W", "F", "I", "C", "B",
+]
+ignore = [
+    "E501",
+]
+line-length = 110
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint.isort]
+# Update known first-party to the new module name
+known-first-party = ["textembedcompress"]
+
+# [tool.black]
+# line-length = 110
+# target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+
+# [tool.mypy]
+# python_version = "3.8"
+# warn_return_any = true
+# warn_unused_configs = true
+# ignore_missing_imports = true
+# exclude = ['venv', 'build', 'dist']
