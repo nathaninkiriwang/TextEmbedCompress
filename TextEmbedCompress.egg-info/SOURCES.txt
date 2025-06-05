@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+TextEmbedCompress.egg-info/PKG-INFO
+TextEmbedCompress.egg-info/SOURCES.txt
+TextEmbedCompress.egg-info/dependency_links.txt
+TextEmbedCompress.egg-info/requires.txt
+TextEmbedCompress.egg-info/top_level.txt
+textembedcompress/__init__.py
+textembedcompress/common_utils.py
+textembedcompress/compress.py
+textembedcompress/datasets.py
+textembedcompress/evaluate.py
+textembedcompress/evaluation_utils.py
+textembedcompress/models.py
+textembedcompress/pipeline.py
